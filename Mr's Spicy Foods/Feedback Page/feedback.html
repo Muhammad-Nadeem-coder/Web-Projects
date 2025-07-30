@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-Mr' spicy foods</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="../Home Page/style.css">
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<body>
+    <!-- Header Section (Same as other pages) -->
+    <header>
+        <nav>
+            <div>
+                <img src="../imgs/Other/logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li> <a href="../Home Page/index.html" target="_blank">Home</a> </li>
+                <li> <a href="../Menu Page/menu.html" target="_blank">Menu</a> </li>
+                <li> <a href="../Services Page/services.html" target="_blank">Services</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+                <li> <a href="../AboutUs Page/aboutus.html" target="_blank">About Us</a> </li>
+            </ul>
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Feedback Section -->
+    <main>
+        <section class="feedback-section">
+            <h2>We value your feedback!</h2>
+            <p>Please let us know how we did. Your feedback helps us improve.</p>
+
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Feedback:</label>
+                    <textarea id="message" rows="5" placeholder="Share your experience" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="imageUpload">Upload Food Image (Optional):</label>
+                    <input type="file" id="imageUpload" name="foodImage" accept="image/*">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rate Us:</label>
+                    <div class="stars">
+                        <span id="span2" data-star="1">&#9733;</span>
+                        <span id="span2" data-star="2">&#9733;</span>
+                        <span id="span2" data-star="3">&#9733;</span>
+                        <span id="span2" data-star="4">&#9733;</span>
+                        <span id="span2" data-star="5">&#9733;</span>
+                    </div>
+                    <input type="hidden" id="rating" name="rating" value="0">
+                </div>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section (Same as other pages) -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="../imgs/Other/logo.jpg" alt="Logo" class="footer-logo">
+                <p>Mr' Spiciy Food Resturant - Serving the best Food with love and dedication!</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../Home Page/index.html" target="_blank">Home</a></li>
+                    <li><a href="../Menu Page/menu.html" target="_blank">Menu</a></li>
+                    <li><a href="../Services Page/services.html" target="_blank">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../AboutUs Page/aboutus.html" target="_blank">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> +923106224006</p>
+                <p><strong>Email:</strong> mrspicy@gmail.com</p>
+                <p><strong>Address:</strong> 9 number chungi near lari add, Sargodha</p>
+                <p><strong>Timings:</strong> Monday - Sunday ( 2pm-2am )</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Mr' Spicy Food Resturant | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script defer src="feedback.js"></script>
+    <!-- for icons -->
+    <script src="https://kit.fontawesome.com/ca014a1dd4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
