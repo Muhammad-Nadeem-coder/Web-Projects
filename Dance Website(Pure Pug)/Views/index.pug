@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            //- li Home   i comment this one just for understanding because it will just show the bullet with name 'Home'
+            //- This is how we can use two tags in one line.
+
+            //- li #[a Home]
+
+            div#logo
+                img(src="/static/img/logo.png")
+                | ADA
+
+            //-this is how we will add href link 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection
+        div Welcome to Aqua Dance Academy 
+        div.small Eat Sleep Dance Repeat 
+    section#missionSection
+        h1 Our Mission
+        div.card
+          h3 Dance Perfection
+          div.card-box
+              div.card-img
+                  img(src="/static/img/1.png")
+              div.card-content
+                  p This is the best card academy of the universe  
+
+        div.card
+          h3 Dance the way you like 
+          div.card-box
+              div.card-img
+                  img(src="/static/img/2.png")
+              div.card-content
+                  p This is the best card academy of the universe
+
+        div.card
+          h3 Expert Teaching
+          div.card-box
+              div.card-img
+                  img(src="/static/img/3.png")
+              div.card-content
+                  p This is the best card academy of the universe 
+    section#sponsorsSection
+        h1  Our  Sponsors 
+        div#sponsors 
+            img(src="/static/img/apple.png" Class="spimage")
+            img(src="/static/img/microsoft.png" Class="spimage")
+            img(src="/static/img/hp.jpg" Class="spimage")
+            img(src="/static/img/skype.png" Class="spimage")
+    footer#footer
+        | Copyright &copy 2024 AquaDanceAcademy.com | All rights reserved 
+    script
+      include ../static/index.js

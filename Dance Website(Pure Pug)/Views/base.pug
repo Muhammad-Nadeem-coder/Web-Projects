@@ -1,1 +1,28 @@
+doctype html
+html
+  head
+    title Aqua Dance Academy 
+    block scripts
+    block style
+      
+  body
+    nav#navbar
+        ul
+            //- li Home   i comment this one just for understanding because it will just show the bullet with name 'Home'
+            //- This is how we can use two tags in one line.
 
+            //- li #[a Home]
+
+            div#logo
+                img(src="/static/img/logo.png")
+                | ADA
+
+            //-this is how we will add href link 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+    block content
+    block foot
+     
