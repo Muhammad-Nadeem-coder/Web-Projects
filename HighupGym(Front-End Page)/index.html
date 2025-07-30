@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighUp GYM</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- This link is for the font which i pic from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        /* Css Reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(Images/1.jpg);
+            background-size: cover;
+            background-position-y: -180px;
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+            font-style: italic;
+
+        }
+
+        /* Left div */
+
+        .left {
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            line-height: 20px;
+            font-size: 20px;
+
+        }
+
+        /* mid div */
+
+        .mid {
+            display: block;
+            width: 55%;
+            margin: 20px 330px;
+            /* border: 3px solid blue; */
+        }
+
+        /* right div */
+        .right {
+            /* border: 3px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 39px;
+        }
+
+        /* nav bar class used in Ul */
+
+        .navbar {
+            display: inline-block;
+            /* background-color: rgb(100, 236, 236); */
+        }
+
+        /* list */
+
+        .navbar li {
+            display: inline-block;
+            /* float: left; */
+            list-style: none;
+            font-size: 21px;
+
+        }
+
+        /* Anchor tag */
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 18px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(235, 138, 68);
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 110px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .btn {
+            cursor: pointer;
+            margin: 0px 9px;
+            padding: 1px 10px;
+            color: white;
+            background-color: black;
+            border: 2px solid red;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .btn:hover {
+            background-color: rgb(48, 36, 23);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 80px 50px;
+            padding: 40px 60px;
+            padding-top: 30px;
+            padding-left: 30px;
+            width: 35%;
+            border-radius: 30px;
+        }
+
+        .form input {
+            text-align: center;
+            display: block;
+            width: 450px;
+            padding: 3px;
+            border: 2px solid black;
+            margin: 10px auto;
+            font-size: 17px;
+            border-radius: 17px;
+            font-family: "DM Serif Text", serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .container button {
+            display: block;
+            width: 450px;
+            padding: 5px;
+            margin: auto;
+            border-radius: 17px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .right1 {
+            border: 2px solid white;
+            border-radius: 15px;
+            display: inline-block;
+            position: absolute;
+            right: 50px;
+            top: 120px;
+            padding-bottom: 15px;
+            width: 300px;
+        }
+
+        .right1 h1 {
+            width: 270px;
+            margin-left: 15px;
+            margin-top: 12px;
+            text-align: center;
+            color: red;
+            background-color: white;
+            font-size: 40px;
+            border-radius: 12px;
+        }
+
+        .right1 h3 {
+            width: 260px;
+            margin-top: 50px;
+            font-size: 29px;
+            text-align: center;
+            line-height: 25px;
+            color: rgb(9, 230, 6);
+
+        }
+
+        .sub {
+            display: block;
+            margin-bottom: 12px;
+            background-color: blue;
+            border-radius: 12px;
+            margin: auto;
+            width: 200px;
+            font-size: 22px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .bttn {
+            background-color: rgb(234, 58, 58);
+            color: white;
+            border: 3px solid black;
+            width: 200px;
+            border-radius: 7px;
+            text-align: center;
+            display: block;
+            margin: auto;
+            padding: 7px;
+            font-family: "DM Serif Text", serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 6px;
+            cursor: pointer;
+        }
+
+        .bttn:hover {
+            color: blue;
+            background-color: rgb(107, 94, 77);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- left div for logo -->
+        <div class="left">
+            <img src="Images/2.png" alt="">
+            <div>
+                HighUp GYM
+            </div>
+        </div>
+
+        <!-- mid div for navigation menue -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">AboutUs</a> </li>
+                <li> <a href="#">FitnessCalculator</a> </li>
+                <li> <a href="#">ContactUs</a> </li>
+            </ul>
+        </div>
+
+        <!-- right div for buttons -->
+        <div class="right">
+            <buttton class="btn">Call &nbsp;Us</buttton>
+            <buttton class="btn">Email &nbsp;Now</buttton>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM of Sargodha</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+                <input type="text" name="" id="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Sumbit</button>
+        </form>
+
+    </div>
+
+    <div class="right1">
+        <h1>Subcription &#9889;</h1>
+        <h3>&#10144; &nbsp;Year Plan</h3>
+        <div class="sub">RS: 80,000/-</div>
+        <button class="bttn">Subcribe Now</button>
+        <h3>&#10144; &nbsp;Monthly Plan</h3>
+        <div class="sub">RS: 7,000/-</div>
+        <button class="bttn">Subcribe Now</button>
+    </div>
+</body>
+
+</html>
