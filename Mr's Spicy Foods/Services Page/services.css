@@ -1,0 +1,98 @@
+/* General Styles */
+
+.profile{
+    color: white;
+    font-size: 24px;
+}
+
+.services-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card,
+.service-home-delivery,
+.service-restaurant {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.service-card:hover,
+.service-home-delivery:hover,
+.service-restaurant:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-home-delivery img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-restaurant img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h3,
+.service-home-delivery h3,
+.service-restaurant h3 {
+    font-size: 24px;
+    color: #007BFF;
+    margin: 15px 0;
+}
+
+.service-card p,
+.service-home-delivery p,
+.service-restaurant p {
+    font-size: 16px;
+    padding: 0 15px 20px;
+}
+
+.additional-services {
+    margin-top: 40px;
+}
+
+.additional-services .service-home-delivery,
+.additional-services .service-restaurant {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
