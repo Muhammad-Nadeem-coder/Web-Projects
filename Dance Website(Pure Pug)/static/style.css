@@ -1,0 +1,174 @@
+/* this is we impoting google font by using import option*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+/* Css Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: rgb(244, 59, 59);
+    padding: 13px 15px;
+    font-family: "Bree Serif", serif;
+}
+
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 20px;
+    margin-right: 40px;
+    height: 27px;
+    font-size: 25px;
+}
+
+#logo img {
+    height: 42px;
+    filter: invert(1);
+
+
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: bold;
+}
+
+#navbar li a:hover {
+    color: black;
+}
+
+#introSection {
+    color: white;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Bree Serif", serif;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    background: url(/static/water.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: -472px;
+    background-size: cover;
+}
+
+#introSection div.small {
+    font-size: 2.5rem;
+    color: red;
+    /* this property is used for giving border to text */
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: white;
+}
+
+#missionSection {
+    height: 320px;
+    width: 85%;
+    margin: auto;
+}
+
+#missionSection h1 {
+    color: red;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    padding-top: 6px;
+    font-family: "Bree Serif", serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 32%;
+    margin: 23px 7px;
+    height: 209px;
+    display: inline-block;
+}
+
+.card h3 {
+    text-align: center;
+    font-family: "Bree Serif", serif;
+    margin-top: 12px;
+
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img {
+    height: 140px;
+    padding: 0px 14px;
+    margin: 14px 15px;
+}
+
+.card-img img {
+    height: inherit;
+}
+
+.card-content {
+    padding: 0px 10px;
+}
+
+.card-content p {
+    font-size: 17px;
+}
+
+#sponsorsSection {
+    height: 300px;
+    background-color: rgb(222, 191, 191);
+}
+
+#sponsorsSection h1 {
+    text-align: center;
+    padding-top: 12px;
+    font-family: "Bree Serif", serif;
+    color: red;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    font-size: 2rem;
+}
+
+#sponsors{
+    height: 150px;
+    max-width: 1000px;
+    margin:27px auto;
+}
+
+.spimage{
+    height: 80%;
+    margin:20px;
+    margin-right: 22px;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: "Bree Serif", serif;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
