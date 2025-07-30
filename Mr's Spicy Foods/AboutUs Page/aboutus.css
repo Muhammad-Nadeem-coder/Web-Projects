@@ -1,0 +1,131 @@
+/* About Us Styling */
+
+.profile {
+    color: white;
+    font-size: 24px;
+}
+
+
+/* About Us Page */
+#about-hero {
+    background: url('../imgs/Other/bg.jpg') center/cover no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.5s ease-in;
+}
+
+#about-hero h1 {
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.621);
+    padding: 2px;
+    border-radius: 10px;
+    width: 800px;
+    margin: 15px auto;
+}
+
+#about-hero p {
+    background-color: rgba(0, 0, 0, 0.758);
+    font-size: 1.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+#about-details {
+    padding: 60px 20px;
+}
+
+#about-details .about-text {
+    text-align: center;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.left {
+    text-align: left;
+}
+
+
+#about-details .about-text h2 {
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+#about-details .about-text p strong {
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#about-details .about-text img {
+    margin-top: 30px;
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#about-details .team {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team h2 {
+    color: #007BFF;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-members .member {
+    text-align: center;
+    max-width: 250px;
+    margin: 20px;
+}
+
+.team-members .member img {
+    width: 100%;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-members .member h3 {
+    font-size: 1.5rem;
+    color: #007BFF;
+}
+
+#faq {
+    padding: 60px 20px;
+    background: #f8f9fa;
+}
+
+#faq h2 {
+    color: #007BFF;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
