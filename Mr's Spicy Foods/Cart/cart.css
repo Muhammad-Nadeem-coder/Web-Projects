@@ -1,0 +1,242 @@
+.profile {
+    color: white;
+    font-size: 24px;
+}
+
+
+#cart {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+#cart h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#cart-items .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item p {
+    font-size: 16px;
+    color: black;
+    width: 300px;
+    /* Fixed width to keep names aligned */
+    margin: 0;
+    /* Remove default margin for consistency */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 120px;
+    /* Prevent shifting due to varying text */
+    justify-content: center;
+}
+
+.quantity-controls button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    background-color: #2980b9;
+}
+
+.quantity-display {
+    width: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-item .remove-btn {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item .remove-btn:hover {
+    background-color: #c92310;
+}
+
+#order-summary {
+    border-top: 1px solid #ddd;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+#order-summary h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: black;
+}
+
+#order-summary p {
+    font-size: 18px;
+    margin: 5px 205px;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    color: red;
+}
+
+#checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #099945;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background-color: #07612c;
+}
+
+
+
+
+
+#delivery-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+#delivery-details label {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+#delivery-details textarea,
+#delivery-details input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#delivery-details textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+#delivery-details textarea.input-error,
+#delivery-details input.input-error {
+    border: 2px solid red !important;
+}
+
+
+
+/* Style for Instructions field */
+#delivery-details textarea#instructions {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 60px;
+}
+
+/* Payment Method Section */
+#payment-method {
+    margin-top: 20px;
+}
+
+#payment-method p {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 3px;
+}
+
+/* Payment Box Styling */
+.payment-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dad8d8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+/* Blue Circle for Selected Payment */
+.selected-circle {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Adjust text and icon spacing */
+.payment-box span {
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+.payment-box img {
+    width: 45px;
+    /* Adjust size as needed */
+    height: 45px;
+}

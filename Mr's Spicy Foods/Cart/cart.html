@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../Home Page/style.css">
+</head>
+
+<body>
+
+    <!-- Header (Same as other pages) -->
+    <header>
+        <nav>
+            <div>
+                <img src="../imgs/Other/logo.jpg" alt="Logo">
+            </div>
+            <ul>
+                <li> <a href="../Home Page/index.html" target="_blank">Home</a> </li>
+                <li> <a href="../Home Page/index.html" target="_blank">Menu</a> </li>
+                <li> <a href="../Services Page/services.html" target="_blank">Services</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+                <li> <a href="../AboutUs Page/aboutus.html" target="_blank">About Us</a> </li>
+                <li> <a href="../Feedback Page/feedback.html" target="_blank">Feedback</a> </li>
+            </ul>
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="order-summary">
+            <h3>Order Summary</h3>
+            <p><strong>Delivery:</strong> &nbsp&nbsp&nbsp Free</p>
+            <p id="total-price"></p>
+
+
+            <div id="delivery-details">
+
+
+                <!-- Added Instructions Field -->
+                <label for="instructions">Instructions (Optional):</label>
+                <textarea id="instructions" placeholder="Write any special request for your order"></textarea>
+
+                <!-- Address -->
+                <label for="address">Address:</label>
+                <textarea id="address" placeholder="Enter your delivery address" required></textarea>
+                <span class="error-message" id="address-error"></span>
+
+                <!-- Phone number -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" pattern="[0-9]{11}" required>
+                <span class="error-message" id="phone-error"></span>
+
+            </div>
+
+            <!-- Added Payment Method Box -->
+            <div id="payment-method">
+                <p>Payment Method:</p>
+                <div class="payment-box">
+                    <div class="selected-circle"></div>
+                    <span>Cash on Delivery</span>
+                    <img src="../imgs/Other/cash-icon1.jpg" alt="Cash Icon">
+                </div>
+            </div>
+
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <img src="../imgs/Other/logo.jpg" alt="Logo" class="footer-logo">
+                <p>Mr' Spiciy Food Resturant - Serving the best Food with love and dedication!</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../Home Page/index.html" target="_blank">Home</a></li>
+                    <!-- <li><a href="#">Menu</a></li> -->
+                    <li><a href="../Services Page/services.html" target="_blank">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../AboutUs Page/aboutus.html" target="_blank">About Us</a></li>
+                    <li><a href="../Feedback Page/feedback.html" target="_blank">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><strong>Phone:</strong> +923106224006</p>
+                <p><strong>Email:</strong> mrspicy@gmail.com</p>
+                <p><strong>Address:</strong> 9 number chungi near lari add, Sargodha</p>
+                <p><strong>Timings:</strong> Monday - Sunday ( 2pm-2am )</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Mr' Spicy Food Resturant | All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+    <!-- javascript for cart -->
+    <script src="../Cart/cart.js"></script>
+
+    <!-- for icon -->
+    <script src="https://kit.fontawesome.com/ca014a1dd4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
