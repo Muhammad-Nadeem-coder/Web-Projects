@@ -1,0 +1,47 @@
+"the Dance website Project"
+1-firsrt we make file app.js and then  enter these four to 5 lines
+
+const express = require('express');
+const { request } = require('http');
+const path = require('path');
+const app = express();
+const port = 80;
+
+2-Then we open command terminal and give command 'npm init' to mke this package and the two commands 'npm install express' and 'npm install pug'
+3-then we make the folder 'views'. an din folder views we made file index.pug for writting html.
+4-then we add a command in app.js for reading static files. and EXPRESS SPECIFIC STUFF.
+5-then we add PUG SPECIFIC STUFF
+6-then we enter ENDPOINTS
+7-then we SET the SERVER
+8-then we include the section in index.pug for html taken from pug documentation from option 'includes' and property 'including plin text'
+9-then we made folder static and made files style.css for our html file and index.js in the folder 'static'
+10-here now we are entering our required data of html in index.pug file like navbar, li,section......etc
+11-now we are styling our entered content of html in file style.css
+
+12-after style the whole website , now we are moved to design contact form. for this we have made three files name 'base.pug','home.pug','contact.pug' in the folder views.
+13-then we have copied the copied the 1st box code for template inheritance from the 'pug documentation' in the option 'inheritance'.  and then we paste it in file 'base.pug'.
+14-then we made their a simple template. and then we go to file 'home.pug' and their we write command of 'extend' to fill that maded template of file 'base.pug'
+14-then we continue filling data according to template by copy/pasting data from old file 'index.html'
+15-after filling the file 'home.pug' according to defined template. we gone to the file 'app.js' and their we change the endpoint name from 'index.pug' to 'home.pug' for serving this file on the server/port.
+16-now we are filling the data in file 'contact.pug' acoording to same template given in file 'base.pug'.
+17-Then we make one more endpoint for file contact in the 'app.js'
+18-then we copy the navbar data from 'home.pug' and paste it in the template file 'base.pug' 
+19-then we made an other css file 'stylecontact.css' in folder 'static' specially for the contact file.
+
+20-the work or steps we have done after the step 12 was just for understanding the inheritance of template. we can make one template and use it at many places. and in all these steps we have made new thing that was our 'contact form'.
+21- agr ham chahte to ham apne whi pehle 12 steps ko follow kr ke apni old file 'index.pug' me bhi apne contact form ko design kr skte the.
+
+22- lkn haan haan , phir contact form to to design ho jata ik alaida 'contact.pug' ki file me or us ki styling bhi ho jaati. lkn us file ko link kese krna tha navbar ke ;contact; button se.
+23- step 22 is pending to learn. but the problem of step 22 could be solved by making another endpoint in the app.js file.  As we Done in step 17 
+
+
+
+
+24- now we come again to save data in data base of contact form file 'contact.pug' after learning ,mongo db.
+25-first we resolve the problem defined in step 22 that how we will link our contact form. we just go to file 'base.pug' and there we give the path to contact ancor tag by just typing '/contact' in href section.
+26-after we insert mongoose in our file 'contact.pug'. we open documentation of mongoose on browser and their first we pic firt box code for connecting mongoose and paste it in file 'app.js'. then we copy next box of mongoose that was about setting schema and then paste it in file 'app.js'. then we set all attirbutes/inputs of our contact form in the mongoose schema. and then we copy the model line code which was 3rd box of mongoose documentation and paste in in 'app.js'.
+27-then we open new terminal form windows option and run our main 'mongod' process.
+28-then we install 'mongoose' in our 'app.js' terminal by giving command 'npm install mongoose'.
+29-then we make a new endpoint of 'post request' for contact form in 'app.js'
+30- then we install body-parser by giving command 'npm install body-parser' . this is used when we want to save/get data of user with the help of 'post request'.
+31- then we write this command const bodyparser=require("body-parser");

@@ -1,0 +1,21 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "this is good website using pug",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nadeem",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.6.2",
+    "pug": "^3.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yhis"
+  }
+}
